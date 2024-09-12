@@ -1,0 +1,8 @@
+Bert input size = seqlen * dmodel * dmodel
+
+weight read before vector reading :
+weights[(kt * TILE_SIZE1 + k) * CFG::dmodel + jt * TILE_SIZE1 + j];
+in[(kt * TILE_SIZE1 + k) * CFG::seqlen + it * TILE_SIZE1 + i];
+
+weight read After vector reading :
+in[((kt * TILE_SIZE1 + k) * CFG::seqlen + it * TILE_SIZE1) / DSIZE + i];

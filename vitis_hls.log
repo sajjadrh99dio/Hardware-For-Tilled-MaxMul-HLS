@@ -1,0 +1,909 @@
+INFO: [HLS 200-10] Running 'E:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Sajjad' on host 'desktop-u1pctas' (Windows NT_amd64 version 6.2) on Mon Aug 26 15:28:03 +0330 2024
+INFO: [HLS 200-10] In directory 'D:/HDL_CODE/Msc_Project/Stage1'
+Sourcing Tcl script 'D:/HDL_CODE/Msc_Project/Stage1/Stage1/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: open_project Stage1 
+INFO: [HLS 200-10] Opening project 'D:/HDL_CODE/Msc_Project/Stage1/Stage1'.
+INFO: [HLS 200-1510] Running: set_top Stage1 
+INFO: [HLS 200-1510] Running: add_files stage1.hpp 
+INFO: [HLS 200-10] Adding design file 'stage1.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files stage1.cpp 
+INFO: [HLS 200-10] Adding design file 'stage1.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files draft.txt 
+INFO: [HLS 200-10] Adding design file 'draft.txt' to the project
+INFO: [HLS 200-1510] Running: add_files config.hpp 
+INFO: [HLS 200-10] Adding design file 'config.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb stage1_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'stage1_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/HDL_CODE/Msc_Project/Stage1/Stage1/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045-ffg900-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z045-ffg900-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name Stage1 Stage1 
+INFO: [HLS 200-1510] Running: csynth_design 
+WARNING: [HLS 200-40] Skipped source file 'draft.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.148 seconds; current allocated memory: 191.489 MB.
+INFO: [HLS 200-10] Analyzing design file 'stage1.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.595 seconds; current allocated memory: 193.084 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::write(hls::vector<signed char, 64ul> const&)' into 'read_input1(hls::vector<signed char, 64ul>*, hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&)' (stage1.cpp:75:30)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::write(hls::vector<signed char, 64ul> const&)' into 'read_input1(hls::vector<signed char, 64ul>*, hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&)' (stage1.cpp:77:30)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::write(hls::vector<signed char, 64ul> const&)' into 'read_input1(hls::vector<signed char, 64ul>*, hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&)' (stage1.cpp:76:30)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::write(hls::vector<signed char, 64ul> const&)' into 'read_weights1(hls::vector<signed char, 64ul>*, hls::stream<hls::vector<signed char, 64ul>, 0>&)' (stage1.cpp:97:44)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<int, 16ul>, 0>::write(hls::vector<int, 16ul> const&)' into 'read_bias1(hls::vector<int, 16ul>*, hls::stream<hls::vector<int, 16ul>, 0>&)' (stage1.cpp:116:33)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<int, 16ul>, 0>::read(hls::vector<int, 16ul>&)' into 'hls::stream<hls::vector<int, 16ul>, 0>::read()' (E:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::vector<int, 16ul>::pragma() const' into 'hls::vector<int, 16ul>::operator[](unsigned long)' (E:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\hls_vector.h:92:5)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::read(hls::vector<signed char, 64ul>&)' into 'hls::stream<hls::vector<signed char, 64ul>, 0>::read()' (E:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::vector<signed char, 64ul>::pragma() const' into 'hls::vector<signed char, 64ul>::operator[](unsigned long)' (E:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\hls_vector.h:92:5)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::ap_bit_ref(ap_int_base<32, false>*, int)' into 'ap_int_base<32, false>::operator[](int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:934:30)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::ap_bit_ref(ap_int_base<1, false>*, int)' into 'ap_int_base<1, false>::operator[](int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:934:30)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::operator bool() const' into 'ap_bit_ref<1, false>& ap_bit_ref<1, false>::operator=<32, false>(ap_bit_ref<32, false> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_ref.h:839:38)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::operator=(unsigned long long)' into 'ap_bit_ref<1, false>& ap_bit_ref<1, false>::operator=<32, false>(ap_bit_ref<32, false> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_ref.h:839:12)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>::ap_range_ref(ap_int_base<32, false>*, int, int)' into 'ap_int_base<32, false>::range(int, int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:853:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::range(int, int)' into 'ap_int_base<32, false>::operator()(int, int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:890:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>::ap_range_ref(ap_int_base<8, false>*, int, int)' into 'ap_int_base<8, false>::range(int, int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:853:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::range(int, int)' into 'ap_int_base<8, false>::operator()(int, int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:890:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>::get() const' into 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:312:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_int_base<32, false> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' into 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>::ap_range_ref(ap_int_base<23, false>*, int, int)' into 'ap_int_base<23, false>::range(int, int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:853:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::range(int, int)' into 'ap_int_base<23, false>::operator()(int, int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:890:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_int_base<32, false> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' into 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_uint<32>::ap_uint(unsigned int)' into 'fp_struct<float>::fp_struct(float)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:312:28)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'fp_struct<float>::fp_struct(float)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:320:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:320:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:320:20)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'fp_struct<float>::fp_struct(float)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:319:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:319:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:319:19)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>& ap_bit_ref<1, false>::operator=<32, false>(ap_bit_ref<32, false> const&)' into 'fp_struct<float>::fp_struct(float)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:318:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator[](int)' into 'fp_struct<float>::fp_struct(float)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:318:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator[](int)' into 'fp_struct<float>::fp_struct(float)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:318:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:652:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:495:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_ufixed<24, 1, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed.h:292:60)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>::ap_range_ref(ap_int_base<23, false>*, int, int)' into 'ap_int_base<23, false>::range(int, int) const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:860:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::range(int, int) const' into 'ap_int_base<23, false>::operator()(int, int) const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:894:18)
+INFO: [HLS 214-131] Inlining function 'af_range_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::af_range_ref(ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)' into 'ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::range(int, int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:1545:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::range(int, int)' into 'ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator()(int, int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:1584:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>::get() const' into 'ap_int_base<23, false>::ap_int_base<23, false>(ap_range_ref<23, false> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:312:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::ap_int_base<23, false>(ap_range_ref<23, false> const&)' into 'af_range_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& af_range_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<23, false>(ap_range_ref<23, false> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_ref.h:301:38)
+INFO: [HLS 214-131] Inlining function 'af_range_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& af_range_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<23, false>(ap_int_base<23, false> const&)' into 'af_range_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& af_range_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<23, false>(ap_range_ref<23, false> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_ref.h:302:12)
+INFO: [HLS 214-131] Inlining function 'af_bit_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::af_bit_ref(ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)' into 'ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator[](unsigned int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:1470:12)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<24, 1, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(int)' into 'fp_struct<float>::mantissa() const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:365:37)
+INFO: [HLS 214-131] Inlining function 'af_bit_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=(bool)' into 'fp_struct<float>::mantissa() const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:367:21)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator[](unsigned int)' into 'fp_struct<float>::mantissa() const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:367:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::wl() const' into 'fp_struct<float>::mantissa() const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:367:13)
+INFO: [HLS 214-131] Inlining function 'af_range_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& af_range_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<23, false>(ap_range_ref<23, false> const&)' into 'fp_struct<float>::mantissa() const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:366:23)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator()(int, int)' into 'fp_struct<float>::mantissa() const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:366:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::wl() const' into 'fp_struct<float>::mantissa() const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:366:13)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::operator()(int, int) const' into 'fp_struct<float>::mantissa() const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:366:25)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:652:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:385:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_ufixed<55, 31, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed.h:193:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<8, false>::RType<32, true>::minus operator-<8, false, 32, true>(ap_int_base<8, false> const&, ap_int_base<32, true> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:1301:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<33>::ap_int<33, true>(ap_int_base<33, true> const&)' into 'ap_int_base<8, false>::RType<32, true>::minus operator-<8, false, 32, true>(ap_int_base<8, false> const&, ap_int_base<32, true> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:1301:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<8, false>::RType<32, true>::minus operator-<8, false, 32, true>(ap_int_base<8, false> const&, ap_int_base<32, true> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:1301:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<8, false>::RType<($_0)32, true>::minus operator-<8, false>(ap_int_base<8, false> const&, int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:1415:1531)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<32, true>::minus operator-<8, false, 32, true>(ap_int_base<8, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<8, false>::RType<($_0)32, true>::minus operator-<8, false>(ap_int_base<8, false> const&, int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:1415:1529)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<($_0)32, true>::minus operator-<8, false>(ap_int_base<8, false> const&, int)' into 'fp_struct<float>::expv() const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:341:19)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::operator long long() const' into 'fp_struct<float>::expv() const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:341:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(unsigned int) const' into 'ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<(int) const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:1313:14)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<(unsigned int) const' into 'ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<(int) const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:1315:14)
+INFO: [HLS 214-131] Inlining function 'ap_uint<55>::ap_uint<55, false>(ap_int_base<55, false> const&)' into 'ap_int_base<55, false>::RType<55, false>::arg1 operator>><55, false>(ap_int_base<55, false> const&, int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:1451:650)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::overflow_adjust(bool, bool, bool, bool)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:349:23)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:652:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::overflow_adjust(bool, bool, bool, bool)' into 'ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:747:7)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<55, false>::operator==<55, false>(ap_int_base<55, false> const&) const' into 'ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:721:36)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, false>::RType<55, false>::arg1 operator>><55, false>(ap_int_base<55, false> const&, int)' into 'ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:721:49)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<55, false>::operator==<55, false>(ap_int_base<55, false> const&) const' into 'ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:713:36)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, false>::RType<55, false>::arg1 operator>><55, false>(ap_int_base<55, false> const&, int)' into 'ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:713:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, false>::ap_int_base(int)' into 'ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:708:36)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:385:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_ufixed<1, 8, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_ufixed<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed.h:193:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>& ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>::operator=<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:652:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>& ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>::operator=<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>::ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:385:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>::ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_ufixed<8, 8, (ap_q_mode)6, (ap_o_mode)3, 0>::ap_ufixed<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed.h:193:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator!() const' into 'ap_fixed_base<9, 9, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<9, 9, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:652:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<9, 9, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<9, 9, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' into 'ap_fixed_base<9, 9, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:385:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<9, 9, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' into 'bool ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator!=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:1453:505)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'bool operator!=<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&, int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:2175:13043)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator!=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'bool operator!=<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&, int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:2175:13031)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<8, true>::ap_bit_ref(ap_int_base<8, true>*, int)' into 'ap_int_base<8, true>::operator[](int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:934:30)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator!() const' into 'ap_fixed_base<8, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<8, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:652:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<8, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<8, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' into 'ap_fixed_base<8, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:385:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<8, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' into 'bool ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator==<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&) const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:1452:370)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'bool operator==<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>(int, ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:2175:12718)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator==<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&) const' into 'bool operator==<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>(int, ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:2175:12778)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<23, false>(int, ap_int_base<23, false> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:1570:2037)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, true>::operator!=<23, false>(ap_int_base<23, false> const&) const' into 'bool operator!=<23, false>(int, ap_int_base<23, false> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:1570:2075)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator==<8, false>(ap_int_base<8, false> const&, int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:1570:1853)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<8, false>::operator==<32, true>(ap_int_base<32, true> const&) const' into 'bool operator==<8, false>(ap_int_base<8, false> const&, int)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_int_base.h:1570:1850)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::to_int() const' into 'fp_struct<float>::__signbit() const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:374:21)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>(ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:652:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>(ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>(ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:385:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>(ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0> const&)' into 'ap_fixed<8, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>(ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed.h:29:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>(ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:652:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>(ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>(ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:385:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>(ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>::operator-() const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:1206:47)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:652:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:385:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed<8, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed.h:29:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::to_ap_int_base(bool) const' into 'ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::to_int() const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:823:69)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::to_int() const' into 'ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::to_int() const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:823:86)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::to_int() const' into 'ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator signed char() const' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/include/header_files\ap_fixed_base.h:988:92)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<55, 31, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15:54)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<8, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator signed char() const' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:61:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<8, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<9, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59:30)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>::operator-() const' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59:30)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<(int) const' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18:73)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<8, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0>(ap_fixed_base<8, 8, false, (ap_q_mode)6, (ap_o_mode)3, 0> const&)' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::operator long long() const' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:47:17)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<55, 31, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18:64)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::operator long long() const' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:44:17)
+INFO: [HLS 214-131] Inlining function 'bool operator==<8, false>(ap_int_base<8, false> const&, int)' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:42:54)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<23, false>(int, ap_int_base<23, false> const&)' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:42:34)
+INFO: [HLS 214-131] Inlining function 'bool operator==<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>(int, ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:42:12)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<8, true>::operator=(int)' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:38:24)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::operator[](int)' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:38:2)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:37:31)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<8, true>::operator=(int)' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:36:24)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::operator[](int)' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:36:2)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:35:31)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 8, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&, int)' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:32:96)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<1, 8, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_ufixed<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:20:63)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<8, 8, (ap_q_mode)6, (ap_o_mode)3, 0>::ap_ufixed<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<55, 31, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:21:58)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<int, 16ul>, 0>::read()' into 'linear_fused1(hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<int, 16ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, float)' (stage1.cpp:161:65)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::write(hls::vector<signed char, 64ul> const&)' into 'linear_fused1(hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<int, 16ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, float)' (stage1.cpp:202:29)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::read()' into 'linear_fused1(hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<int, 16ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, float)' (stage1.cpp:173:67)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::read()' into 'linear_fused1(hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<int, 16ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, float)' (stage1.cpp:181:44)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::read()' into 'write_out1(hls::vector<signed char, 64ul>*, hls::stream<hls::vector<signed char, 64ul>, 0>&)' (stage1.cpp:132:100)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::stream(char const*)' into 'Stage1' (stage1.cpp:220:46)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::stream(char const*)' into 'Stage1' (stage1.cpp:222:46)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::stream(char const*)' into 'Stage1' (stage1.cpp:224:46)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::stream(char const*)' into 'Stage1' (stage1.cpp:226:46)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::stream(char const*)' into 'Stage1' (stage1.cpp:228:46)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::stream(char const*)' into 'Stage1' (stage1.cpp:230:46)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<int, 16ul>, 0>::stream(char const*)' into 'Stage1' (stage1.cpp:234:47)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<int, 16ul>, 0>::stream(char const*)' into 'Stage1' (stage1.cpp:236:47)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<int, 16ul>, 0>::stream(char const*)' into 'Stage1' (stage1.cpp:238:47)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::stream(char const*)' into 'Stage1' (stage1.cpp:243:46)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::stream(char const*)' into 'Stage1' (stage1.cpp:245:46)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::vector<signed char, 64ul>, 0>::stream(char const*)' into 'Stage1' (stage1.cpp:247:46)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_189_9' (stage1.cpp:189:43) in function 'linear_fused1' completely with a factor of 64 (stage1.cpp:189:43)
+INFO: [HLS 214-178] Inlining function 'std::__array_traits<int, 16ul>::_S_ref(int const (&) [16], unsigned long)' into 'std::array<int, 16ul>::operator[](unsigned long)' (E:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\array:182:0)
+INFO: [HLS 214-178] Inlining function 'std::array<int, 16ul>::operator[](unsigned long)' into 'hls::vector<int, 16ul>::operator[](unsigned long)' (E:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\hls_vector.h:91:0)
+INFO: [HLS 214-178] Inlining function 'std::__array_traits<signed char, 64ul>::_S_ref(signed char const (&) [64], unsigned long)' into 'std::array<signed char, 64ul>::operator[](unsigned long)' (E:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\6.2.0\include\c++\array:182:0)
+INFO: [HLS 214-178] Inlining function 'std::array<signed char, 64ul>::operator[](unsigned long)' into 'hls::vector<signed char, 64ul>::operator[](unsigned long)' (E:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\hls_vector.h:91:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'signed char generic_cast_IEEE754<signed char, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<signed char>::is_signed, bool>::type)' into 'signed char generic_cast_IEEE754<signed char, float>(float, bool)' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'signed char generic_cast_IEEE754<signed char, float>(float, bool)' into '__hls_fptosi_float_i8' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:49:0)
+INFO: [HLS 214-178] Inlining function 'hls::vector<int, 16ul>::operator[](unsigned long)' into 'linear_fused1(hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<int, 16ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, float)' (stage1.cpp:146:0)
+INFO: [HLS 214-178] Inlining function 'hls::vector<signed char, 64ul>::operator[](unsigned long)' into 'linear_fused1(hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<int, 16ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, float)' (stage1.cpp:146:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i8' into 'linear_fused1(hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<int, 16ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, float)' (stage1.cpp:146:0)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i512.s_class.hls::vectors' into 'linear_fused1(hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, hls::stream<hls::vector<int, 16ul>, 0>&, hls::stream<hls::vector<signed char, 64ul>, 0>&, float) (.1)' (E:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 11.721 seconds; current allocated memory: 201.955 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 201.956 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.588 seconds; current allocated memory: 217.862 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-1101] Packing variable 'tmp.data._M_elems' (E:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:155) into a 512-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'tmp.data._M_elems.1' (E:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:155) into a 512-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'tmp.data._M_elems.2' (E:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:155) into a 512-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'res_temp.data._M_elems' (stage1.cpp:196) into a 512-bit variable.
+WARNING: [SYNCHK 200-23] stage1.cpp:164: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.783 seconds; current allocated memory: 233.344 MB.
+INFO: [XFORM 203-1101] Packing variable 'tmp.data._M_elems' (E:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:155) into a 512-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'tmp.data._M_elems.1' (E:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:155) into a 512-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'tmp.data._M_elems.2' (E:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:155) into a 512-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'res_temp.data._M_elems' (stage1.cpp:196) into a 512-bit variable.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_174_7' (stage1.cpp:174) in function 'linear_fused1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_182_8' (stage1.cpp:182) in function 'linear_fused1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'WB' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:13) in function 'linear_fused1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_113_4' (stage1.cpp:113) in function 'read_bias1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_70_4' (stage1.cpp:70) in function 'read_input1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_93_4' (stage1.cpp:93) in function 'read_weights1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_128_3' (stage1.cpp:128) in function 'write_out1' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_160_3' (stage1.cpp:161) in function 'linear_fused1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'WB' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:13) in function 'linear_fused1' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_163_4' (stage1.cpp:163) in function 'linear_fused1' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_199_11' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:13) in function 'linear_fused1' completely with a factor of 64.
+WARNING: [HLS 200-914] Completely partitioning array 'out_block' (stage1.cpp:148) accessed through non-constant indices on dimension 2 (stage1.cpp:164:22), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+Resolution: For help on HLS 200-914 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-914.html
+INFO: [XFORM 203-101] Partitioning array 'out_block' (stage1.cpp:148) in dimension 2 completely.
+WARNING: [HLS 200-914] Completely partitioning array 'B_line' (stage1.cpp:149) accessed through non-constant indices on dimension 1 (stage1.cpp:175:29), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+Resolution: For help on HLS 200-914 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-914.html
+INFO: [XFORM 203-101] Partitioning array 'B_line' (stage1.cpp:149) in dimension 1 completely.
+WARNING: [HLS 200-914] Completely partitioning array 'out_block' (stage1.cpp:148) accessed through non-constant indices on dimension 2 (stage1.cpp:164:22), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+Resolution: For help on HLS 200-914 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-914.html
+INFO: [XFORM 203-101] Partitioning array 'out_block' (stage1.cpp:148) in dimension 2 completely.
+WARNING: [HLS 200-914] Completely partitioning array 'B_line' (stage1.cpp:149) accessed through non-constant indices on dimension 1 (stage1.cpp:175:29), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+Resolution: For help on HLS 200-914 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-914.html
+INFO: [XFORM 203-101] Partitioning array 'B_line' (stage1.cpp:149) in dimension 1 completely.
+WARNING: [HLS 200-914] Completely partitioning array 'out_block' (stage1.cpp:148) accessed through non-constant indices on dimension 2 (stage1.cpp:164:22), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+Resolution: For help on HLS 200-914 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-914.html
+INFO: [XFORM 203-101] Partitioning array 'out_block' (stage1.cpp:148) in dimension 2 completely.
+WARNING: [HLS 200-914] Completely partitioning array 'B_line' (stage1.cpp:149) accessed through non-constant indices on dimension 1 (stage1.cpp:175:29), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+Resolution: For help on HLS 200-914 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-914.html
+INFO: [XFORM 203-101] Partitioning array 'B_line' (stage1.cpp:149) in dimension 1 completely.
+WARNING: [HLS 200-805] An internal stream 'value_out_stream' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'query_out_stream' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'key_out_stream' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'Stage1' (stage1.cpp:215)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+Resolution: For help on HLS 200-786 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-786.html
+INFO: [XFORM 203-712] Applying dataflow to function 'Stage1' (stage1.cpp:215), detected/extracted 14 process function(s): 
+	 'Stage1.entry14'
+	 'read_input1'
+	 'read_weights16'
+	 'read_weights17'
+	 'read_weights1'
+	 'read_bias18'
+	 'read_bias19'
+	 'read_bias1'
+	 'linear_fused110'
+	 'linear_fused111'
+	 'linear_fused1'
+	 'write_out112'
+	 'write_out113'
+	 'write_out1'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 7 seconds. CPU system time: 0 seconds. Elapsed time: 7.657 seconds; current allocated memory: 279.014 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_126_2' (stage1.cpp:126:36) in function 'write_out113'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_124_1' (stage1.cpp:124:32) in function 'write_out113'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_126_2' (stage1.cpp:126:36) in function 'write_out112'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_124_1' (stage1.cpp:124:32) in function 'write_out112'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_126_2' (stage1.cpp:126:36) in function 'write_out1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_124_1' (stage1.cpp:124:32) in function 'write_out1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_91_3' (stage1.cpp:91:39) in function 'read_weights17'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_89_2' (stage1.cpp:89:35) in function 'read_weights17'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_87_1' (stage1.cpp:87:31) in function 'read_weights17'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_91_3' (stage1.cpp:91:39) in function 'read_weights16'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_89_2' (stage1.cpp:89:35) in function 'read_weights16'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_87_1' (stage1.cpp:87:31) in function 'read_weights16'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_91_3' (stage1.cpp:91:39) in function 'read_weights1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_89_2' (stage1.cpp:89:35) in function 'read_weights1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_87_1' (stage1.cpp:87:31) in function 'read_weights1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_68_3' (stage1.cpp:68:39) in function 'read_input1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_66_2' (stage1.cpp:66:35) in function 'read_input1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_64_1' (stage1.cpp:64:31) in function 'read_input1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_111_3' (stage1.cpp:111:40) in function 'read_bias19'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_108_2' (stage1.cpp:108:36) in function 'read_bias19'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_106_1' (stage1.cpp:106:32) in function 'read_bias19'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_111_3' (stage1.cpp:111:40) in function 'read_bias18'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_108_2' (stage1.cpp:108:36) in function 'read_bias18'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_106_1' (stage1.cpp:106:32) in function 'read_bias18'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_111_3' (stage1.cpp:111:40) in function 'read_bias1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_108_2' (stage1.cpp:108:36) in function 'read_bias1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_106_1' (stage1.cpp:106:32) in function 'read_bias1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'ReadBias' (stage1.cpp:159:25) in function 'linear_fused111'.
+WARNING: [HLS 200-960] Cannot flatten loop 'ReadB' (stage1.cpp:171:25) in function 'linear_fused111' more than one sub loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-960.html
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_168_5' (stage1.cpp:168:37) in function 'linear_fused111'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_157_2' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:13:17) in function 'linear_fused111' more than one sub loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-960.html
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_156_1' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:13:17) in function 'linear_fused111'.
+INFO: [XFORM 203-541] Flattening a loop nest 'ReadBias' (stage1.cpp:159:25) in function 'linear_fused110'.
+WARNING: [HLS 200-960] Cannot flatten loop 'ReadB' (stage1.cpp:171:25) in function 'linear_fused110' more than one sub loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-960.html
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_168_5' (stage1.cpp:168:37) in function 'linear_fused110'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_157_2' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:13:17) in function 'linear_fused110' more than one sub loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-960.html
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_156_1' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:13:17) in function 'linear_fused110'.
+INFO: [XFORM 203-541] Flattening a loop nest 'ReadBias' (stage1.cpp:159:25) in function 'linear_fused1'.
+WARNING: [HLS 200-960] Cannot flatten loop 'ReadB' (stage1.cpp:171:25) in function 'linear_fused1' more than one sub loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-960.html
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_168_5' (stage1.cpp:168:37) in function 'linear_fused1'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_157_2' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:13:17) in function 'linear_fused1' more than one sub loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-960.html
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_156_1' (r:/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/src/shared/hls/clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:13:17) in function 'linear_fused1'.
+INFO: [HLS 200-472] Inferring partial write operation for 'A_line' (stage1.cpp:183:48)
+INFO: [HLS 200-472] Inferring partial write operation for 'out_block[0]' (stage1.cpp:191:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'out_block[1]' (stage1.cpp:164:45)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 4.929 seconds; current allocated memory: 439.109 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Stage1' ...
+WARNING: [SYN 201-103] Legalizing function name 'Stage1.entry3' to 'Stage1_entry3'.
+WARNING: [SYN 201-103] Legalizing function name 'Stage1.entry14' to 'Stage1_entry14'.
+WARNING: [SYN 201-107] Renaming port name 'Stage1/in' to 'Stage1/in_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Stage1_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.397 seconds; current allocated memory: 439.907 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.273 seconds; current allocated memory: 440.101 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Stage1_entry14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.268 seconds; current allocated memory: 440.198 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.243 seconds; current allocated memory: 440.464 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_input1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_64_1_VITIS_LOOP_68_3_VITIS_LOOP_70_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_64_1_VITIS_LOOP_68_3_VITIS_LOOP_70_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.278 seconds; current allocated memory: 440.551 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.778 seconds; current allocated memory: 440.737 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_weights16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_87_1_VITIS_LOOP_91_3_VITIS_LOOP_93_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_87_1_VITIS_LOOP_91_3_VITIS_LOOP_93_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.264 seconds; current allocated memory: 440.862 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.233 seconds; current allocated memory: 440.964 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_weights17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_87_1_VITIS_LOOP_91_3_VITIS_LOOP_93_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_87_1_VITIS_LOOP_91_3_VITIS_LOOP_93_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.262 seconds; current allocated memory: 441.030 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.214 seconds; current allocated memory: 441.132 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_weights1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_87_1_VITIS_LOOP_91_3_VITIS_LOOP_93_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_87_1_VITIS_LOOP_91_3_VITIS_LOOP_93_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.263 seconds; current allocated memory: 441.198 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.226 seconds; current allocated memory: 441.329 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_bias18' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_106_1_VITIS_LOOP_111_3_VITIS_LOOP_113_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_106_1_VITIS_LOOP_111_3_VITIS_LOOP_113_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.274 seconds; current allocated memory: 441.396 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.694 seconds; current allocated memory: 441.498 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_bias19' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_106_1_VITIS_LOOP_111_3_VITIS_LOOP_113_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_106_1_VITIS_LOOP_111_3_VITIS_LOOP_113_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.321 seconds; current allocated memory: 441.593 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.242 seconds; current allocated memory: 441.724 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_bias1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_106_1_VITIS_LOOP_111_3_VITIS_LOOP_113_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_106_1_VITIS_LOOP_111_3_VITIS_LOOP_113_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.266 seconds; current allocated memory: 441.790 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.221 seconds; current allocated memory: 441.892 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'linear_fused110' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_126) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_125) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_124) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_123) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_122) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_121) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_120) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_119) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_118) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_117) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_116) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_115) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_114) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_113) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_112) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_111) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_110) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_109) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_108) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_107) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_106) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_105) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_104) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_103) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_102) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_101) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_100) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_99) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_98) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_97) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_96) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_95) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_94) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_93) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_92) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_91) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_90) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_89) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_88) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_87) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_86) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_85) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_84) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_83) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_82) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_81) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_80) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_79) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_78) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_77) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_76) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_75) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_74) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_73) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_72) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_71) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_70) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_69) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_68) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_67) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_66) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_65) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_64) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'ReadBias_VITIS_LOOP_160_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'ReadBias_VITIS_LOOP_160_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_174_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_174_7'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_182_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_182_8'
+INFO: [SCHED 204-61] Pipelining loop 'MAC'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'MAC'
+INFO: [SCHED 204-61] Pipelining loop 'WB'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 13, loop 'WB'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.104 seconds; current allocated memory: 445.031 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.67 seconds; current allocated memory: 449.272 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'linear_fused111' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_63) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_62) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_61) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_60) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_59) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_58) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_57) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_56) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_55) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_54) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_53) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_52) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_51) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_50) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_49) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_48) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_47) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_46) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_45) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_44) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_43) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_42) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_41) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_40) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_38) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_36) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_35) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_34) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_32) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_30) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_28) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_27) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'ReadBias_VITIS_LOOP_160_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'ReadBias_VITIS_LOOP_160_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_174_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_174_7'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_182_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_182_8'
+INFO: [SCHED 204-61] Pipelining loop 'MAC'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'MAC'
+INFO: [SCHED 204-61] Pipelining loop 'WB'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 13, loop 'WB'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.461 seconds; current allocated memory: 452.446 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.063 seconds; current allocated memory: 456.699 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'linear_fused1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_189) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_188) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_187) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_186) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_185) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_184) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_183) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_182) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_181) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_180) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_179) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_178) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_177) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_176) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_175) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_174) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_173) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_172) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_171) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_170) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_169) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_168) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_167) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_166) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_165) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_164) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_163) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_162) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_161) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_160) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_159) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_158) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_157) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_156) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_155) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_154) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_153) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_152) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_151) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_150) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_149) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_148) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_147) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_146) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_145) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_144) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_143) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_142) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_141) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_140) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_139) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_138) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_137) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_136) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_135) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_134) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_133) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_132) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_131) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_130) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_129) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_128) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191_127) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln191) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'ReadBias_VITIS_LOOP_160_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'ReadBias_VITIS_LOOP_160_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_174_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_174_7'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_182_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_182_8'
+INFO: [SCHED 204-61] Pipelining loop 'MAC'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'MAC'
+INFO: [SCHED 204-61] Pipelining loop 'WB'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 13, loop 'WB'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.439 seconds; current allocated memory: 459.844 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.197 seconds; current allocated memory: 464.069 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_out112' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_124_1_VITIS_LOOP_126_2_VITIS_LOOP_128_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_124_1_VITIS_LOOP_126_2_VITIS_LOOP_128_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.264 seconds; current allocated memory: 464.153 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.268 seconds; current allocated memory: 464.267 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_out113' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_124_1_VITIS_LOOP_126_2_VITIS_LOOP_128_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_124_1_VITIS_LOOP_126_2_VITIS_LOOP_128_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.413 seconds; current allocated memory: 464.329 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.307 seconds; current allocated memory: 464.414 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_out1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_124_1_VITIS_LOOP_126_2_VITIS_LOOP_128_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_124_1_VITIS_LOOP_126_2_VITIS_LOOP_128_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.8 seconds; current allocated memory: 464.476 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.461 seconds; current allocated memory: 464.589 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Stage1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.289 seconds; current allocated memory: 464.856 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.627 seconds; current allocated memory: 465.518 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Stage1_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Stage1_entry3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.014 seconds; current allocated memory: 465.782 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Stage1_entry14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Stage1_entry14'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.337 seconds; current allocated memory: 466.485 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_input1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_input1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.318 seconds; current allocated memory: 467.181 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_weights16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_weights16'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.335 seconds; current allocated memory: 467.668 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_weights17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_weights17'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.329 seconds; current allocated memory: 468.152 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_weights1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_weights1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.352 seconds; current allocated memory: 468.605 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_bias18' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_bias18'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.376 seconds; current allocated memory: 469.058 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_bias19' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_bias19'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.407 seconds; current allocated memory: 469.510 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_bias1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_bias1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.443 seconds; current allocated memory: 469.964 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'linear_fused110' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_8s_32ns_32_4_1': 64 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_5_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_fused110'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.931 seconds; current allocated memory: 476.495 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'linear_fused111' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_8s_32ns_32_4_1': 64 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_5_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_fused111'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.62 seconds; current allocated memory: 495.535 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'linear_fused1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_8s_32ns_32_4_1': 64 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_5_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_fused1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.845 seconds; current allocated memory: 514.568 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'write_out112' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'write_out112'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.912 seconds; current allocated memory: 527.799 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'write_out113' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'write_out113'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.8 seconds; current allocated memory: 528.265 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'write_out1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'write_out1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.384 seconds; current allocated memory: 528.715 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Stage1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Stage1/in_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Stage1/query_out' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Stage1/key_out' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Stage1/value_out' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Stage1/query_weight_t' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Stage1/query_bias' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Stage1/key_weight_t' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Stage1/key_bias' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Stage1/value_weight_t' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Stage1/value_bias' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Stage1/M_query' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Stage1/M_key' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Stage1/M_value' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Stage1' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Stage1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.263 seconds; current allocated memory: 530.832 MB.
+INFO: [RTMG 210-278] Implementing memory 'Stage1_linear_fused110_out_block_0_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'Stage1_linear_fused110_A_line_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'in_c1_U(Stage1_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'query_weight_t_c2_U(Stage1_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'query_bias_c3_U(Stage1_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'key_weight_t_c4_U(Stage1_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'key_bias_c5_U(Stage1_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'value_weight_t_c6_U(Stage1_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'value_bias_c7_U(Stage1_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'M_query_c8_U(Stage1_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'M_key_c9_U(Stage1_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'M_value_c10_U(Stage1_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'in_c_U(Stage1_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'query_weight_t_c_U(Stage1_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'query_bias_c_U(Stage1_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'key_weight_t_c_U(Stage1_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'key_bias_c_U(Stage1_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'value_weight_t_c_U(Stage1_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'value_bias_c_U(Stage1_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'M_query_c_U(Stage1_fifo_w32_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'M_key_c_U(Stage1_fifo_w32_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'M_value_c_U(Stage1_fifo_w32_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'in_query_U(Stage1_fifo_w512_d192_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'in_key_U(Stage1_fifo_w512_d192_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'in_value_U(Stage1_fifo_w512_d192_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'query_weight_stream_U(Stage1_fifo_w512_d192_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'key_weight_stream_U(Stage1_fifo_w512_d192_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'value_weight_stream_U(Stage1_fifo_w512_d192_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'query_bias_stream_U(Stage1_fifo_w512_d192_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'key_bias_stream_U(Stage1_fifo_w512_d192_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'value_bias_stream_U(Stage1_fifo_w512_d192_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'query_out_stream_U(Stage1_fifo_w512_d2_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'key_out_stream_U(Stage1_fifo_w512_d2_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'value_out_stream_U(Stage1_fifo_w512_d2_D)' using Distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Stage1_entry14_U0_U(Stage1_start_for_Stage1_entry14_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_read_input1_U0_U(Stage1_start_for_read_input1_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_read_weights16_U0_U(Stage1_start_for_read_weights16_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_read_weights17_U0_U(Stage1_start_for_read_weights17_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_read_weights1_U0_U(Stage1_start_for_read_weights1_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_read_bias18_U0_U(Stage1_start_for_read_bias18_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_read_bias19_U0_U(Stage1_start_for_read_bias19_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_read_bias1_U0_U(Stage1_start_for_read_bias1_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_linear_fused110_U0_U(Stage1_start_for_linear_fused110_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_linear_fused111_U0_U(Stage1_start_for_linear_fused111_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_linear_fused1_U0_U(Stage1_start_for_linear_fused1_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_write_out112_U0_U(Stage1_start_for_write_out112_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_write_out113_U0_U(Stage1_start_for_write_out113_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_write_out1_U0_U(Stage1_start_for_write_out1_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 7 seconds. CPU system time: 1 seconds. Elapsed time: 10.322 seconds; current allocated memory: 537.990 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for Stage1.
+INFO: [VLOG 209-307] Generating Verilog RTL for Stage1.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 140.06 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 54 seconds. CPU system time: 4 seconds. Elapsed time: 84.521 seconds; current allocated memory: 539.615 MB.
+INFO: [HLS 200-112] Total CPU user time: 59 seconds. Total CPU system time: 5 seconds. Total elapsed time: 87.937 seconds; peak allocated memory: 537.990 MB.
